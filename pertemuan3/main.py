@@ -10,23 +10,23 @@ block = Block(
     previous_hash="0",
 )
 
-dificulty = 4  # Jumlah leading zeros yang diinginkan
+dificulty = 3  # Jumlah leading zeros yang diinginkan
 
 print("\nData Block     : ", block.data)
-print("Difificultu      : ", dificulty)
+print("Difificulty    : ", dificulty)
 
 proof_of_work(block, dificulty)
 
-print("Nonce            : ", block.nonce)
-print("Hash             : ", block.hash)
+print("Nonce : ", block.nonce)
+print("Hash  : ", block.hash)
 
 print("\nPROOF OF STAKE")
 
 validators = {
-    "Farmer": 10,
-    "Distributor": 20,
-    "warehouse": 30,
-    "Retailer": 40,
+    "Farmer": 70,
+    "Distributor": 10,
+    "warehouse": 10,
+    "Retailer": 10,
 }
 
 print("\nValidator:")
